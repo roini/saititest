@@ -1,0 +1,122 @@
+/*reset syle*/
+/*ამას ამატებთ ჰედერის გაწერის მერე,რადგანაც დასჰორება არ ქონდეს ბოდი ტეგს*/
+body{
+    margin:0;
+    min-height: 100vh;/*es nishnavs rom mteli ekrani iyos xiluli nawili,50vh-nishnavs xilul naxevar ekrans*/
+}
+/*global styles*/
+/*ამას ვაკეთებთ reset style-ს გასტილვის მერე*/
+.container{
+    width:1200px;
+    margin:auto;/*amit gacentrda*/
+}
+.d-flex{
+    display: flex;
+}
+/*header styles*/
+header{
+    height: 70px;
+    background-color:cornflowerblue;
+    align-items: center;
+}
+header .logo{
+    width:45px;
+    height: 45px;
+}
+header .container{
+    align-items:center;
+}
+nav{
+    width:calc(100% - 45px);/*აქ იგულისხმება,რომ calc(კონტეინერის_მთლიან_სიგანეს - სურათის_სიგანე).ამ ფორმულის მესვეობით ვიღებთ ნავ ტეგის სიგანეს*/
+    justify-content: space-between;
+}
+nav a{/*aqedan teqstebs vwvdebiT*/
+    color:white;
+    text-decoration: none;
+    padding:0 10px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+ footer{
+     padding:15px 0;
+     background-color: cornsilk;
+     height: 60px;
+     box-sizing: border-box;
+ }
+ footer p{
+     margin: 0;
+ }
+/* auth */
+.auth-form-container {
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.auth-form-container .text-input-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form-container .text-input,
+.auth-form-container .locations
+ {
+    height: 35px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+.auth-form-container .locations{
+    background-color: white;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.w-100{
+    width: 100%;
+}
+.mb-15/*დასოება ქვემოდან*/
+{
+    margin-bottom: 15px;
+}
+.btn{
+    display:block;
+    font-size: 16px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: rgb(77,77,179);
+    color: white;
+}
+.btn-link{
+    text-decoration: none;
+    line-height: 35px;/*ზემოდან და ქვემოდან აშორებს*/
+    color: blue;
+}
+.btn-link:hover{
+    text-decoration: underline;
+}
+
+.sex-container{
+    display: inline-block;
+}
+
+.body-container{/*ამის მეშვეობით ფორმას დავაშორებთ ჰედერსა და ფუთერს*/
+    padding: 30px 0;/*დაშორება გვერდებზე 35 და ზემოდან და ქვემოდან 0*/
+    min-height: calc(100vh - 70px - 60px);/*ამ შემთხვევაში გვინდა რომ ფუთერი ქვემოდან მიიკრას
+    ფორმულაში იგულისხმება (100vh - header.size - footer.size)*/
+    box-sizing: border-box;
+
+}
